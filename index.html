@@ -8,38 +8,47 @@
   <body>
     <header class="main_header">
       <h1>The Code Review</h1>
-      <h2>Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
-      <hr class="bold_hr"/>
-      <hr />
-    </header>
-    <main>
-      <form class="sign_up_form" action="index.html" method="post">
-        <h2>Contact Information</h2>
-        <label for="full_name">Full Name</label>
-        <input type="text" name="user_name" value="Required" id="full_name"><br />
-        <label for="email">Email Address</label>
-        <input type="text" name="email" value="Required" id="email"><br />
-        <label for="phone">Phone Number</label>
-        <input type="text" name="phone_number" id="phone"><br />
-        <label for="street_adress">Street Adress</label>
-        <input type="text" name="street_adress" id="street_adress"><br />
-        <label for="state">Zip Code</label>
-        <select class="" name="">
-          <option value="CA">CA</option>
-          <option value="MN">MN</option>
-        </select><br />
-        <label for="zip_code">Zip Code</label>
-        <input type="text" name="zip_code" id="zip_code"><br />
+      <section class="intro">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="bold_hr" />
         <hr />
-        <h2>Newsletter</h2>
-        <p>Select the newsletters you would like to recieve</p>
-        <input type="checkbox" name="newsletters" value="">
-        <p>Newsletter Format</p>
-        <input type="radio" name="newsletter_format" value="html">
-        <input type="radio" name="newsletter_format" value="plain_text">
-        <p>Other topics you'd like to hear about</p>
-        <textarea name="name"></textarea><br />
+      </section>
+    </header>
+    <main class="main_content">
+      <form action="index.html" method="post">
+        <fieldset class="contact_info">
+          <legend><h2>Contact Information</h2></legend>
+          <label for="full_name">Full Name</label>
+          <input type="text" name="user_name" placeholder="Required" id="full_name" required>
+          <label for="email">Email Address</label>
+          <input type="text" name="email" placeholder="Required" id="email" required>
+          <label for="phone">Phone Number</label>
+            <input type="text" name="phone_number" id="phone">
+          <label for="street_adress">Street Adress</label>
+          <input type="text" name="street_adress" id="street_adress" autofocus>
+          <label for="state">State</label>
+          <select class="" name="">
+            <option disabled selected>Chose State</option>
+            <option value="CA">CA</option>
+            <option value="MN">MN</option>
+          </select>
+          <label for="zip_code">Zip Code</label>
+          <input type="text" name="zip_code" id="zip_code">
+        </fieldset>
+        <hr />
+        <fieldset class="newsletter">
+          <legend><h2>Newsletter</h2></legend>
+          <p>Select the newsletters you would like to recieve</p>
+          <input type="checkbox" name="newsletters" value="html_news" id="html_news" checked><label for="html_news">HTML News</label><br />
+          <input type="checkbox" name="newsletters" value="css_news" id="css_news"><label for="css_news">CSS News</label><br />
+          <input type="checkbox" name="newsletters" value="javascript_news" id="javascript_news"><label for="javascript_news">JavaScript News</label><br />
+          <p>Newsletter Format</p>
+          <input type="radio" name="newsletter_format" value="html" id="html" checked="checked"><label for="html">HTML</label><br />
+          <input type="radio" name="newsletter_format" value="plain_text" id="plain_text"><label for="plain_text">Plain Text</label><br />
+          <p>Other topics you'd like to hear about</p>
+          <textarea name="name"></textarea><br />
+        </fieldset>
         <input type="button" value="Sign Up">
       </form>
     </main>

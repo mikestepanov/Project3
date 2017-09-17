@@ -1,8 +1,94 @@
-h1 {
-  background: rgb(45, 57, 69);
-  color: white;
+@import url("normilize.css");
+
+* {
+  font-family: "Times New Roman", Georgia, Serif;
+  box-sizing: border-box;
+  color: rgb(50, 90, 135);
+  background: rgb(250, 250, 250);
 }
 
-h2, hr {
+/*Positioning ----------*/
+
+.main_header, .main_footer {
+  text-align: center;
+}
+
+.intro, .main_content, .main_footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.newsletter input {
+  margin: 0.7em 0.7em 0 0;
+}
+
+.contact_info label {
+  clear: right;
+  display: block;
+}
+
+/*General Styling ----------*/
+
+footer {
+  font-style: italic;
+}
+
+hr {
+  height: 0.1em;
+  background: rgb(45, 57, 69);
+  margin: 0.15em 0;
+  padding: 0;
+}
+
+.bold_hr {
+  height: 0.2em;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  background: rgb(45, 57, 69);
+  padding: 0.7em;
+  font-size: 1.5em;
+}
+
+h2 {
   color: rgb(45, 57, 69);
+}
+
+.main_header p, .main_footer p {
+  color: darkgrey;
+}
+
+input, select, textarea {
+  background: rgb(239, 240, 241);
+  border-radius: 0.25em;
+  border: 0;
+}
+
+input[type="button"], input[type="text"] {
+  padding: 1em;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1em;
+}
+
+input[type="button"] {
+  background: rgb(77, 187, 181);
+  color: white;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
 }
