@@ -21,6 +21,7 @@
 fieldset {
   border: 0;
   padding: 0;
+  margin-bottom: 2em;
 }
 
 .newsletter input {
@@ -28,7 +29,6 @@ fieldset {
 }
 
 .contact_info label {
-  clear: right;
   display: block;
 }
 
@@ -57,22 +57,26 @@ h1 {
   font-size: 1.5em;
 }
 
-h2 {
+h2, h3 {
   color: rgb(45, 57, 69);
 }
 
-.main_header p, .main_footer p {
+h3 {
+  font-size: 1.3em;
+}
+
+
+.main_header p, .main_footer p, select {
   color: darkgrey;
 }
 
-input, select, textarea {
+input[type="button"], input[type="text"], select, textarea {
   background: rgb(239, 240, 241);
+  padding: 1em;
   border-radius: 0.25em;
   border: 0;
-}
-
-input[type="button"], input[type="text"] {
-  padding: 1em;
+  width: 100%;
+  /*border: 2px solid rgb(45, 57, 69);*/
 }
 
 select {
@@ -85,10 +89,52 @@ select {
 input[type="button"] {
   background: rgb(77, 187, 181);
   color: white;
-  width: 100%;
 }
 
 textarea {
   resize: none;
-  width: 100%;
+}
+
+.contact_info label {
+  margin: 1em 0 0.5em;
+}
+
+input[placeholder="Required"]:invalid {
+  font-style: italic;
+  text-align: right;
+}
+
+#zip_code {
+  width: 50%;
+}
+
+@media (min-width: 769px) {
+  .intro, .main_content, .main_footer {
+    width: 50%;
+  }
+
+  .contact_info label {
+    width: 20%;
+    display: inline;
+    float: left;
+  }
+
+  input[type="text"], select {
+    width: 80%;
+    margin-bottom: 1em;
+    clear: both;
+  }
+
+  #zip_code {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .main_footer {
+    margin-top: 2em;
+  }
+
+  .intro {
+    margin: 4em auto 2em;
+  }
 }
