@@ -111,6 +111,7 @@ input[placeholder="Required"]:invalid {
 @media (min-width: 769px) {
   .intro, .main_content, .main_footer {
     width: 50%;
+    min-width: 600px;
   }
 
   .contact_info label {
