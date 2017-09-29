@@ -1,7 +1,7 @@
 @import url("normilize.css");
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   box-sizing: border-box;
   color: rgb(50, 90, 135);
   background: rgb(250, 250, 250);
@@ -76,7 +76,6 @@ input[type="button"], input[type="text"], select, textarea {
   border-radius: 0.25em;
   border: 0;
   width: 100%;
-  /*border: 2px solid rgb(45, 57, 69);*/
 }
 
 select {
@@ -99,7 +98,7 @@ textarea {
   margin: 1em 0 0.5em;
 }
 
-input[placeholder="Required"]:invalid {
+input[placeholder="Required "]:invalid {
   font-style: italic;
   text-align: right;
 }
