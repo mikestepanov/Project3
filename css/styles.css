@@ -1,7 +1,7 @@
 @import url("normilize.css");
 
 * {
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   color: rgb(50, 90, 135);
   background: rgb(250, 250, 250);
